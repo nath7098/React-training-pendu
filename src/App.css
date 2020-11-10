@@ -1,4 +1,7 @@
 .App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -35,4 +38,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.word {
+  font-size: 50px;
+  letter-spacing: .8rem;
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 100px auto;
+}
+
+.letter {
+  border: 2px;
+  border-color: grey;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  margin: 25px 25px;
+}
+
+.letter.good {
+  background: green;
+}
+
+.letter.wrong {
+  background: red;
 }
